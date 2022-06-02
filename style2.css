@@ -27,13 +27,89 @@ body {
   background-color: var(--Red);
   margin: 100px;
   font-family: "Poppins", sans-serif;
-  /* background-image: url(/images/bg-intro-desktop.png); */
+  background-image: url(/images/bg-intro-desktop.png);
 }
 
-h2 {
+.container-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-wrapper-left {
+  padding: 5rem 6rem;
+  flex: 1;
+}
+
+h1 {
   color: white;
 }
 
-h2 {
+p {
+  font-size: 0.7rem;
   color: white;
+}
+
+.container-wrapper-right {
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+}
+
+.offer {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: var(--Blue);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.form {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.6rem;
+  font-weight: 600;
+  padding-left: 0.9rem;
+  border-radius: 5px;
+  border: 0.2px solid var(--Blue);
+  color: var(--Dark-Blue);
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  background-color: var(--Green);
+  border: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
