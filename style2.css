@@ -76,6 +76,14 @@ p {
   font-weight: 600;
 }
 
+.montlyoffer {
+  font-weight: 400;
+}
+
+.offerpara {
+  margin: 0;
+}
+
 .form {
   width: 70%;
   margin: 0 auto;
@@ -92,12 +100,13 @@ p {
 
 .form-group input {
   width: 100%;
-  padding: 0.6rem;
+  padding: 0.8rem;
   font-weight: 600;
   padding-left: 0.9rem;
   border-radius: 5px;
-  border: 0.2px solid var(--Blue);
+  border: 0.2px solid var(--Dark-Blue);
   color: var(--Dark-Blue);
+  font-size: 0.9rem;
 }
 
 input:focus {
@@ -118,4 +127,19 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+@media only screen and (max-width: 425px) {
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container-wrapper-right {
+    width: 100%;
+  }
+
+  .form,
+  .offer {
+    width: 100%;
+  }
 }
