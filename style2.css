@@ -94,8 +94,9 @@ p {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   width: 100%;
+  position: relative;
 }
 
 .form-group input {
@@ -107,6 +108,20 @@ p {
   border: 0.2px solid var(--Dark-Blue);
   color: var(--Dark-Blue);
   font-size: 0.9rem;
+}
+
+.form-group .submit {
+  margin-bottom: 0;
+}
+
+#error {
+  color: var(--Red);
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-style: italic;
+  position: absolute;
+  right: 0px;
+  bottom: -15px;
 }
 
 input:focus {
@@ -127,19 +142,66 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--Grayish-Blue);
+}
+
+.tandc {
+  text-align: center;
+  color: var(--Grayish-Blue);
+  font-size: 0.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-error {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.terms {
+  color: var(--Red);
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 425px) {
+  body {
+    margin: 0;
+    text-align: center;
+  }
   .container-wrapper {
     flex-direction: column;
   }
 
+  .container-wrapper-left {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .container-wrapper-right {
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .form,
   .offer {
     width: 100%;
+  }
+
+  .offer {
+    padding: 1rem;
   }
 }
